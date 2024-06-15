@@ -1,0 +1,56 @@
+---
+title: "STAT40830__Homework_1"
+date: today
+date-format: long
+format:
+  html:
+    code-fold: true
+    code-tools: true
+    code-line-numbers: true
+    fontsize: 1.3em
+    toc: false
+    embed-resources: true
+    grid:
+      body-width: 1000px
+execute: 
+  eval: true
+  echo: true
+---
+
+# A plot using "mtcars: Motor Trend Car Road Tests"
+
+***
+
+## Scatterplot of Miles per Gallon (mpg) vs. Weight (wt)
+
+```{r}
+#| label: plot-mtcars-mpg-vs-wt
+#| echo: false
+#| fig-cap: "Miles per Gallon (mpg) vs. Weight (wt)"
+#| fig-cap-location: bottom
+#| fig-width: 12
+#| fig-height: 8
+
+# Load the mtcars dataset
+data(mtcars)
+
+# Plot a scatterplot of Miles per Gallon (mpg) vs. Weight (wt)
+plot(mtcars$wt, mtcars$mpg, 
+     main = "Scatterplot: Miles per Gallon (mpg) vs. Weight (wt)",
+     xlab = "Weight (1000 lbs)",
+     ylab = "Miles/(US) gallon",
+     col = "blue",      # Colour of the data points on the plot
+     pch = 16,          # Filled cicles representing the data points
+     cex = 1.5)         # Sizing of text and graphical elements
+
+# Add a grid
+grid()
+```
+
+## Explanation of the Plot
+
+The above plot is a __scatterplot__ of the values of the variables <span style="color: green;">"Miles/(US) gallon" (mpg)</span> vs <span style="color: green;">"Weight (1000 lbs)" (wt)</span> that come from the _"mtcars: Motor Trend Car Road Tests"_ R dataset.
+
+(The documentation for the R dataset _"mtcars: Motor Trend Car Road Tests"_ can be read [here](https://www.rdocumentation.org/packages/datasets/versions/3.6.2/topics/mtcars).)
+
+The scatterplot reveals a __clear negative association__: as <span style="color: green;">"Weight (1000 lbs)" (wt)</span> increases, <span style="color: green;">"Miles/(US) gallon" (mpg)</span> tends to decrease. This suggests that __heavier cars tend to have lower values of mileage per gallon__ and vice versa. Linear regression could be used to plot the line of best fit. The __negative slope__ of the __resulting line__ would indicate an __inverse relationship between weight and mileage per gallon__.

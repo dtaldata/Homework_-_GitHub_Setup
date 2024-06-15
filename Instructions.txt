@@ -1,0 +1,14 @@
+There are 2 marks available for this exercise (deadline midnight 17th of June 2024).
+
+In this discussion thread you must upload two files 
+
+a Qmd file and 
+a pdf file.
+Create a neat Quarto document or presentation. In the documentpresentation, you must do a plot on a dataset that can be found on any R package and include some text explaining what you plotted. The file does not need to be extensive. 
+If you wish to add some extra text, consider adding an explanation of your approach, some descriptive statistics of the variables used in the graph and a line or two introducing the dataset as part of an introduction.
+
+0.7 mark - Render the file so that the rendered file does not show any R code (but shows the graph) and upload the file to the discussion thread (An .Qmd and pdf file).
+0.7 mark - Make use of some featuresformatting aesthetics of Quarto in your file (e.g., bold, italics, section heading size, or colour).
+0.4 mark for plot and for commented code that produces the plot
+0.2 mark for the text describing the plot
+N.B. You can create the document as a HTML document, but you must convert it to pdf. This is due to a Brightspace issue with HTML file uploads, where images, tables, other details etc. are corrupted and missing. (If you used revealjs see Slide 19 of 2_literate_programming_STAT40830).
